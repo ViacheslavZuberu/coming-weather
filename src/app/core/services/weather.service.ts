@@ -16,6 +16,7 @@ export class WeatherService {
             {
                 params: {
                     q: 'Kharkiv',
+                    units: 'metric',
                     appid: API_KEY
                 }
             }

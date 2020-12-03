@@ -1,5 +1,3 @@
 <p *ngIf="isLoading">Loading...</p>
 
-<pre *ngIf="!isLoading">
-  {{ currentWeather | json }}
-</pre>
+<app-weather-card *ngIf="!isLoading" [weatherModel]="currentWeather"></app-weather-card>

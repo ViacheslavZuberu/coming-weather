@@ -1,0 +1,19 @@
+.card {
+    width: 300px;
+    padding: 8px 16px;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+}

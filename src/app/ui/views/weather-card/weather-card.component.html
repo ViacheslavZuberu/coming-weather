@@ -1,0 +1,8 @@
+<mat-card class="card">
+    <p *ngIf="!weatherModel">No data!</p>
+    <div class="container" *ngIf="weatherModel">
+        <img src="http://openweathermap.org/img/wn/{{weatherModel.weather[0].icon}}@2x.png" alt="Icon">
+        <p>{{ weatherModel.weather[0].main }}</p>
+        <p>{{ weatherModel.main.temp }} C</p>
+    </div>
+</mat-card>

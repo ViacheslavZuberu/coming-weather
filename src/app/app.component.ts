@@ -10,7 +10,7 @@ import { WeatherService } from './core/services/weather.service';
 export class AppComponent implements OnInit {
 
   public isLoading: boolean = false;
-  public currentWeather: WeatherResponse | null = null;
+  public currentWeather?: WeatherResponse;
 
   constructor(private weatherService: WeatherService) {}
 
