@@ -1,2 +1,5 @@
-<h1>Coming Weather</h1>
-<p>Initial Version</p>
+<p *ngIf="isLoading">Loading...</p>
+
+<pre *ngIf="!isLoading">
+  {{ currentWeather | json }}
+</pre>
